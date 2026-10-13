@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Program Suit</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
+  <div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <table class="table table-bordered text-center w-auto">
+      <tr>
+        <th class="bg-secondary text-white">
+          <h1>Ayo Main Suit</h1>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <div id="menu">
+            <h3 class="mt-3">Mau main suit yang mana?</h3>
+            <button class="btn btn-info m-4" onclick="pilihSuit('bgk')">Batu Gunting Kertas</button>
+            <button class="btn btn-success m-4" onclick="pilihSuit('gos')">Gajah Orang Semut</button>
+            <button class="btn btn-warning m-4" onclick="pilihSuit('jari')">Suit Jari</button>
+          </div>
+
+          <div id="bgk" class="hidden">
+            <h3 class="mt-3">Batu Gunting Kertas</h3>
+            <button class="btn btn-outline-info m-4" onclick="suitBatuGuntingKertas('batu')">Batu</button>
+            <button class="btn btn-outline-info m-4" onclick="suitBatuGuntingKertas('gunting')">Gunting</button>
+            <button class="btn btn-outline-info m-4" onclick="suitBatuGuntingKertas('kertas')">Kertas</button>
+          </div>
+
+          <div id="gos" class="hidden">
+            <h3 class="mt-3">Gajah Orang Semut</h3>
+            <button class="btn btn-outline-success m-4" onclick="suitGajahOrangSemut('gajah')">Gajah</button>
+            <button class="btn btn-outline-success m-4" onclick="suitGajahOrangSemut('orang')">Orang</button>
+            <button class="btn btn-outline-success m-4" onclick="suitGajahOrangSemut('semut')">Semut</button>
+          </div>
+
+          <div id="jari" class="hidden">
+            <h3 class="mt-3">Suit Jari</h3>
+            <button class="btn btn-outline-warning m-4" onclick="suitJari('jempol')">Jempol</button>
+            <button class="btn btn-outline-warning m-4" onclick="suitJari('telunjuk')">Telunjuk</button>
+            <button class="btn btn-outline-warning m-4" onclick="suitJari('kelingking')">Kelingking</button>
+          </div>
+
+          <hr>
+          <button class="btn btn-secondary" onclick="kembali()">Kembali ke menu</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
